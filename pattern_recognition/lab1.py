@@ -14,7 +14,7 @@ def d(x, Z1, Z2):
 
 W1 = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
 W2 = np.array([[10, 0], [10, 1], [11, 0], [11, 1], [9, 5]])
-X = [3, 5]
+X = [3, 3]
 
 plt.scatter(W1[:, 0], W1[:, 1], c='b', s=10)
 plt.scatter(W2[:, 0], W2[:, 1], c='r', s=10)
@@ -35,6 +35,7 @@ elif ro(X, Z1) - ro(X, Z2) > round:
 else:
     plt.scatter(X[0], X[1], c='black', s=30)
 
-
-plt.axis('equal')
+plt.xlim(-1, 12)
+plt.ylim(-1, 6)
+#plt.axis('equal')
 plt.show()
